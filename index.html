@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+   <!-- form validation -->
+    <div class="container">
+        <div class="container-wrapper">
+            <div class="formTitle"><h1>CONTACT FORM</h1></div>
+            <form id="form" name="form" onsubmit="return formCheck();">
+                <div class="form_feild col-50 clear content">
+                    <div class="input_cover">
+                        <input  id="name" name='name' type="text" placeholder="Enter your name" >
+                        <span id="name-error"></span>
+                    </div>
+                    <div class="input_cover">
+                        <input  id="email" name="email" type="email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"  placeholder="Enter your email">
+                        <span id="email-error"></span>
+                    </div>
+                    <div class="input_cover">
+                        <input  id="number" name="number" type="tel" placeholder="Enter your Phone Number" pattern="[0-9]{11}">
+                        <span id="number-error"></span>
+                    </div>
+                </div>
+                <div class="message_feild col-50 clear content">
+                    <textarea  id="message" name="messsage" placeholder="Type your opinion"></textarea>
+                    <span id="message-error"></span>
+                </div>
+                
+                <div class="submit "><button type="submit"> Submit </button></div>
+            </form>
+        </div>
+    </div>
+    
+    
+    
+	<script src="js/style.js"></script>
+</body>
+</html>

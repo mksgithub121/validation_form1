@@ -1,0 +1,72 @@
+/* global css */
+.clear::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.col-50{
+    width:50%;
+    float: left;
+}
+textarea:focus,button:focus,input:focus{
+    outline: 0;
+}
+
+.content{
+    padding: 10px;
+}
+
+.container-wrapper{
+    margin: auto;
+    width: 80%;
+    margin-top:100px;
+}
+.formTitle{
+    text-align: center;
+    color: #6b6b6b;
+    font-size: 30px;
+    padding: 25px 0px;
+}
+#form .input_cover{
+    margin-bottom: 25px;
+    height: 50px;
+}
+#form input{
+    display: block;    
+}
+#form [id*="-error"]{
+    font-size: 16px;
+    color: red;
+}
+#form input, #form .message_feild textarea{
+    width: 100%;
+    border: 1px solid yellow;
+    background: rgba(0,0,0,.2);
+    border-radius: 10px;
+    padding: 10px 10px;
+    
+}
+.message_feild textarea{ 
+    height: 196px;
+}
+.submit{
+    clear: both;
+}
+.submit button{
+   display: block ;
+    margin: auto;
+    padding: 10px 25px;
+    background: #ddd;
+    border-radius: 10px;
+    border: 1px solid yellow;
+    font-size:18px;
+    font-weight: bold;
+    color:#5d5d5d;
+    transition:.3s;
+    cursor:pointer;
+}
+.submit button:hover{
+    color:#353838;
+}
+/*# sourceMappingURL=style.css.map */
